@@ -1,0 +1,103 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --color1: #6F1D1B;  /* Deep Maroon */
+    --color2: #BB9457;  /* Gold Brown */
+    --color3: #432818;  /* Dark Brown */
+    --color4: #99582A;  /* Warm Copper */
+    --color5: #FFE6A7;  /* Soft Gold */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color3), var(--color1));
+    color: white;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 230, 167, 0.2); /* Soft Gold transparency */
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    transition: 0.3s;
+    border: 2px solid var(--color2);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color5);
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--color2);
+}
+
+.options {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    color: var(--color5);
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+button {
+    background: var(--color4);
+    color: white;
+    font-size: 18px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: var(--color1);
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(255, 230, 167, 0.3);
+    border-radius: 8px;
+    color: var(--color2);
+    transition: 0.3s;
+    border: 1px solid var(--color2);
+}
+
+/* Add animation for username display */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.show {
+    animation: fadeIn 0.5s ease-in-out;
+}

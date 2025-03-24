@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Username Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔹 Random Username Generator 🔹</h1>
+        <p>Create unique and fun usernames for your social media or gaming!</p>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" id="addNumber"> Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="addSpecial"> Include Special Characters
+            </label>
+        </div>
+
+        <button onclick="generateUsername()">✨ Generate Username ✨</button>
+
+        <div class="result">
+            <h2 id="result">👀 Your username will appear here 👀</h2>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
