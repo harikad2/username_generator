@@ -16,5 +16,5 @@ This is a **Flask-based web app** that generates random usernames for social med
 ## 🛠 Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/<harika_d2>/random-username-generator.git
-   cd random-username-generator
+   git clone https://github.com/<harikad2>/username_generator.git
+   cd username_generator
